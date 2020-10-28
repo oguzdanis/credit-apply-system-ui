@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'credit-apply-system'`, () => {
+  it(`should have as title 'form'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('credit-apply-system');
+    expect(app.title).toEqual('form');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('credit-apply-system app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('form app is running!');
   });
 });
