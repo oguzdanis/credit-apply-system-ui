@@ -1,4 +1,4 @@
-export class apiresult {
+export class Apiresult {
     data: Object;
     success: boolean;
     httpStatus: number;
