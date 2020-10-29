@@ -9,3 +9,10 @@
   h3{
       padding-bottom: 5px;
   }
+
+  p{
+    display:block;
+    width:75%;
+    margin: 2em auto;
+    background:#fff;
+  }

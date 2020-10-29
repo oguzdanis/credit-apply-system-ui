@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm } from '@angular/forms';
 import { Customer } from 'src/app/model/customer';
 import { HttpClient } from '@angular/common/http';
+import { Apiresult } from 'src/app/model/apiresult';
 
 @Component({
   selector: 'app-customer',
@@ -21,6 +22,7 @@ export class CustomerComponent implements OnInit {
   });
 
   customer: Customer;
+  response: Object;
 
   onSubmit(){
     this.customer = this.customerForm.value;
@@ -33,6 +35,7 @@ export class CustomerComponent implements OnInit {
     .post("/credit/score/createCustomer",customer)
     .subscribe(responseData => {
       console.log(responseData);
+      this.response=responseData;
     })
   }
 
